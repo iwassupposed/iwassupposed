@@ -24,6 +24,8 @@ html, body {
 #phrase {
   font-size: 2rem;
   max-width: 80%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 #newPhrase {
@@ -41,3 +43,8 @@ html, body {
 #newPhrase:hover {
   opacity: 0.6;
 }
+
+.fade-out {
+  opacity: 0;
+}
+
