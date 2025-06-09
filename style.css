@@ -10,3 +10,19 @@ body {
   font-size: 2rem;
   padding: 1rem;
 }
+
+button {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+  padding: 0.5rem 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.6;
+}
