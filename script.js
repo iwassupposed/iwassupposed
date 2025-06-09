@@ -1,4 +1,4 @@
-fetch('phrases.json')
+fetch('./phrases.json')
   .then(response => response.json())
   .then(phrases => {
     const allPhrases = Object.values(phrases);
