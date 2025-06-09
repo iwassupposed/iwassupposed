@@ -9,6 +9,17 @@ body::before {
   animation: bgshift 30s ease infinite;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+  background: url('glitch.gif') repeat;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
 @keyframes bgshift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
