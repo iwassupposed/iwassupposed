@@ -1,11 +1,3 @@
-fetch('./phrases.json')
-  .then(response => response.json())
-  .then(phrases => {
-    const allPhrases = Object.values(phrases);
-    const randomPhrase = allPhrases[Math.floor(Math.random() * allPhrases.length)];
-    document.getElementById("phrase").innerText = randomPhrase;
-  });
-
 let allPhrases = [];
 
 function getRandomPhrase() {
@@ -18,5 +10,11 @@ fetch('./phrases.json')
   .then(phrases => {
     allPhrases = Object.values(phrases);
     getRandomPhrase();
-    document.getElementById("newPhrase").addEventListener("click", getRandomPhrase);
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("newPhrase");
+  if (button) {
+    button.addEventListener("click", getRandomPhrase);
+  }
+});
