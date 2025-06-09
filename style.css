@@ -15,7 +15,7 @@ body::after {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   z-index: -1;
-  background: url('glitch_dark.png') center center / cover no-repeat;
+  background: url('IMG 1.png') center center / cover no-repeat;
   opacity: 0.06;
   pointer-events: none;
 }
