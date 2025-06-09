@@ -2,27 +2,36 @@ body {
   background-color: #000;
   color: #eee;
   font-family: 'Courier New', monospace;
+  margin: 0;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   text-align: center;
-  font-size: 2rem;
-  padding: 1rem;
 }
 
-button {
-  margin-top: 2rem;
+#phrase {
+  font-size: 2rem;
+  padding: 1rem;
+  max-width: 80%;
+}
+
+#newPhrase {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
   border: 1px solid #eee;
   color: #eee;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   font-family: 'Courier New', monospace;
   font-size: 1rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
-button:hover {
+#newPhrase:hover {
   opacity: 0.6;
 }
