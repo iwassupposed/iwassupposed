@@ -29,3 +29,22 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", getRandomPhrase);
   }
 });
+
+// Manifesto overlay toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const manifesto = document.getElementById("manifestoOverlay");
+  const toggle = document.getElementById("manifestoToggle");
+  const close = document.getElementById("closeManifesto");
+
+  if (toggle && close && manifesto) {
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      manifesto.style.display = "flex";
+    });
+
+    close.addEventListener("click", () => {
+      manifesto.style.display = "none";
+    });
+  }
+});
+
