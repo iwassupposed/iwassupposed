@@ -2,8 +2,18 @@ let allPhrases = [];
 
 function getRandomPhrase() {
   if (allPhrases.length === 0) return;
-  const randomPhrase = allPhrases[Math.floor(Math.random() * allPhrases.length)];
-  document.getElementById("phrase").innerText = randomPhrase;
+
+  const phraseElement = document.getElementById("phrase");
+
+  // Fase 1: dissolve via
+  phraseElement.classList.add("fade-out");
+
+  // Fase 2: dopo 300ms cambia frase e riappare
+  setTimeout(() => {
+    const randomPhrase = allPhrases[Math.floor(Math.random() * allPhrases.length)];
+    phraseElement.innerText = randomPhrase;
+    phraseElement.classList.remove("fade-out");
+  }, 300);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
