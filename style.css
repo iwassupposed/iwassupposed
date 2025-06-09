@@ -3,12 +3,21 @@ body {
   color: #eee;
   font-family: 'Courier New', monospace;
   margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+}
+
+#container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #phrase {
@@ -18,10 +27,7 @@ body {
 }
 
 #newPhrase {
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 30px;
   background-color: transparent;
   border: 1px solid #eee;
   color: #eee;
