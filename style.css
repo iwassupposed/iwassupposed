@@ -20,7 +20,7 @@ body::after {
   background:
     url('glitch.gif') repeat,
     url('img1.png') center center / cover no-repeat;
-  opacity: 0.06;
+  opacity: 0.12;
   pointer-events: none;
 }
 
